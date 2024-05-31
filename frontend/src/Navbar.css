@@ -1,0 +1,6 @@
+.choix{
+    display: None;
+}
+.choixactive{
+    display: block;
+}

@@ -1,0 +1,13 @@
+@media (max-width: 1000px) {
+    #container {
+      display: grid;
+      grid-template-columns:200px 20px 250px ; /* Reduced padding for smaller screens */
+    }
+    #input{
+        width: 20px;
+    }
+    #input1{
+        width: 20px;
+    }
+  }
+  

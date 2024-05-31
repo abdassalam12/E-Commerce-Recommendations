@@ -1,0 +1,148 @@
+.rocket {
+    width: 200%; 
+    height: 100%; 
+    object-fit: cover;
+}
+*{
+    box-sizing: border-box;
+}
+.rocket1 {
+    width: 200%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.rocket-animation {
+    animation: rocket 10s forwards;
+    animation-timing-function: ease;
+}
+
+.rocket-animation00 {
+    animation: rocket00 10s forwards;
+    animation-timing-function: ease;
+}
+
+.rocket-animation1 {
+    animation: rocket1 10s forwards;
+    animation-timing-function: ease;
+}
+
+.rocket-animation11 {
+    animation: rocket11 10s forwards;
+    animation-timing-function: ease;
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+@keyframes rocket {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 1;        
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes rocket00 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 1;        
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes rocket1 {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 1;        
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes rocket11 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 1;        
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+.left_cadre {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+}
+
+.right_cadre {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0%;
+    left: 100%;
+    bottom: 0;
+}
+
+
+
+.hide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+}
+
+.thegrid {
+    display: grid;
+    
+    grid-template-areas:repeat(3, 100%);
+    gap: 0;
+}
+.roc0, .roc3 {
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+.roc1,.roc4{
+    grid-column: 2;
+    grid-row: 1;
+    height: 100%;
+}
+.roc2,.roc5{
+    grid-column: 3;
+    grid-row: 1;
+    height: 100%;
+}
